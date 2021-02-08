@@ -1,5 +1,9 @@
 dependencies:
+  ascii-table: 0.0.9
   discord.js: 12.5.1
+  dotenv: 8.2.0
+  fs: 0.0.2
+  ms: 2.1.3
   node-fetch: 2.6.1
 packages:
   /@discordjs/collection/0.1.6:
@@ -24,6 +28,10 @@ packages:
       node: '>=6.5'
     resolution:
       integrity: sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==
+  /ascii-table/0.0.9:
+    dev: false
+    resolution:
+      integrity: sha1-BqZgTWpV1L9BqaR9mHLXp42jHnM=
   /asynckit/0.4.0:
     dev: false
     resolution:
@@ -57,12 +65,22 @@ packages:
       node: '>=12.0.0'
     resolution:
       integrity: sha512-VwZkVaUAIOB9mKdca0I5MefPMTQJTNg0qdgi1huF3iwsFwJ0L5s/Y69AQe+iPmjuV6j9rtKoG0Ta0n9vgEIL6w==
+  /dotenv/8.2.0:
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
   /event-target-shim/5.0.1:
     dev: false
     engines:
       node: '>=6'
     resolution:
       integrity: sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==
+  /fs/0.0.2:
+    dev: false
+    resolution:
+      integrity: sha1-4fJE7zkzwbKmS9R5kTYGDQ9ZFPg=
   /mime-db/1.45.0:
     dev: false
     engines:
@@ -77,6 +95,10 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-0TO2yJ5YHYr7M2zzT7gDU1tbwHxEUWBCLt0lscSNpcdAfFyJOVEpRYNS7EXVcTLNj/25QO8gulHC5JtTzSE2UQ==
+  /ms/2.1.3:
+    dev: false
+    resolution:
+      integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
   /node-fetch/2.6.1:
     dev: false
     engines:
@@ -113,5 +135,9 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
+  ascii-table: ^0.0.9
   discord.js: ^12.5.1
+  dotenv: ^8.2.0
+  fs: ^0.0.2
+  ms: ^2.1.3
   node-fetch: ^2.6.1
