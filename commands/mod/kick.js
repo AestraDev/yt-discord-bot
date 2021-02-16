@@ -4,11 +4,6 @@ const { MessageEmbed } = require("discord.js");
  
 module.exports = {
   name: "kick",
-  cooldown: 10000,
-  aliases: [],
-  description: "Kick A Member!",
-  usage: "kick <Mention Member>",
-
   run: async (client, message, args) => {
 
     if (!message.member.hasPermission("KICK_MEMBERS"))
