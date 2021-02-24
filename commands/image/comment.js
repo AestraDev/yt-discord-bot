@@ -10,7 +10,7 @@ message.channel.startTyping()
     let avatar = message.author.displayAvatarURL({dynamic : false, format : 'png'});
     let image = await canvacord.Canvas.youtube({
       username : message.author.username,
-      content : args.join(''),
+      content : args.join(' '),
       avatar: avatar
     }).catch((err) => { 
       yee = true

@@ -16,6 +16,20 @@ client.aliases = new Collection();
 ['command'].forEach(handler => {
   require(`./handlers/${handler}`)(client);
 });
+
+//-------Ping------------
+ const express = require("express");
+ const app = express();
+
+ app.get("/", (req, res) => {
+	 res.send("pinging");
+	
+ });
+
+ app.listen(3000, () => {
+	 console.log("server started");
+ });
+
 //--------Message-------
 client.on('message', async message => {
   if (message.author.bot) return;
