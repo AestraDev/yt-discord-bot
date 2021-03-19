@@ -8,6 +8,7 @@ const client = new Client({
 const { config } = require('dotenv')
 const { prefix } = require("./config.json");
 const ms = require("ms");
+const fetch = require("fetch");
 
 //----Handler------
 client.commands = new Collection();
