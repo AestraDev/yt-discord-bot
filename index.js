@@ -5,6 +5,7 @@ const {Client,
 const client = new Client({
   disableEveryone: true
 });
+
 const { config } = require('dotenv')
 const { prefix } = require("./config.json");
 const ms = require("ms");
@@ -65,7 +66,31 @@ client.on("message", message => {
     return message.channel.send("Subscribe to aestra-tech");
   }
 });
+//------status
+client.on("ready", () => {
+  console.log(`Hey user {client.user.username} is online`);
+  client.user.setPresence({
+    activity : {
+      name: "Aestra Tech",
+      
+      // -----ALL TYPES----
+      // PLAYING
+      // WATCHING
+      // STREAMING
+      // LISTENING
+      
+      type: "WATCHING"
+    },
     
+    //TYPES
+    // -- dnd ( do not disturb )
+    // -- idle
+    // -- invisible
+    // -- online
+    
+    status : 'dnd'
+  })
+})
 
 
 client.login(process.env.TOKEN);
